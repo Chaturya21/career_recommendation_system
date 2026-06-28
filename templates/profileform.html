@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-card">
+        <h2>Your Career Profile</h2>
+        <form action="/recommend" method="POST">
+            <div class="grid">
+                <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" name="full_name" placeholder="e.g. Arjun Sharma">
+                </div>
+                <div class="input-box">
+                    <label>Who Are You?</label>
+                    <select name="user_type">
+                        <option value="Student">Student</option>
+                        <option value="Career Changer">Career Changer</option>
+                        <option value="Job Seeker">Job Seeker</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label>Years of Experience: <span id="val-exp">0</span></label>
+                <input type="number" name="exp" value="0" min="0" oninput="updateVal('exp', this.value)">
+            </div>
+
+            <p class="section-title">Skill Ratings (1 - 10)</p>
+            <div class="skill-sliders">
+                <div class="slider-item">
+                    <label>Coding: <span id="val-coding">5</span></label>
+                    <input type="range" name="coding" min="1" max="10" value="5" oninput="updateVal('coding', this.value)">
+                </div>
+                <div class="slider-item">
+                    <label>Design: <span id="val-design">5</span></label>
+                    <input type="range" name="design" min="1" max="10" value="5" oninput="updateVal('design', this.value)">
+                </div>
+                <div class="slider-item">
+                    <label>Marketing: <span id="val-marketing">5</span></label>
+                    <input type="range" name="marketing" min="1" max="10" value="5" oninput="updateVal('marketing', this.value)">
+                </div>
+                <div class="slider-item">
+                    <label>Comm.: <span id="val-comm">5</span></label>
+                    <input type="range" name="comm" min="1" max="10" value="5" oninput="updateVal('comm', this.value)">
+                </div>
+                <div class="slider-item">
+                    <label>Leadership: <span id="val-lead">5</span></label>
+                    <input type="range" name="lead" min="1" max="10" value="5" oninput="updateVal('lead', this.value)">
+                </div>
+                <div class="slider-item">
+                    <label>Problem Solving: <span id="val-prob">5</span></label>
+                    <input type="range" name="prob" min="1" max="10" value="5" oninput="updateVal('prob', this.value)">
+                </div>
+            </div>
+            <button type="submit" class="btn-submit">✦ Get My Career Recommendations</button>
+        </form>
+    </div>
+    <script>
+        function updateVal(id, value) {
+            document.getElementById('val-' + id).innerText = value;
+        }
+    </script>
+</body>
+</html>

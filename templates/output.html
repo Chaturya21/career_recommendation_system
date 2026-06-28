@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results | CareerCompass</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="result-card">
+        <h2>Recommended Paths for You</h2>
+        
+        {% for r in results %}
+        <div class="career-item">
+            <div class="career-info">
+                <strong>{{ r.career }}</strong>
+                <span>{{ r.score }}% Match</span>
+            </div>
+            <div class="bar-bg">
+                <div class="bar-fill" data-width="{{ r.score }}"></div>
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="gap-box">
+            <h3>Skill Gap Analysis for {{ top_career }}</h3>
+            {% if gaps %}
+                <ul>
+                {% for gap in gaps %}
+                    <li>{{ gap }}</li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <p>Excellent! You have the core skills for this path.</p>
+            {% endif %}
+        </div>
+        
+        <a href="/" class="back-link">Back to Home</a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.bar-fill').forEach(bar => {
+            const width = bar.getAttribute('data-width');
+            bar.style.width = width + '%';
+        });
+    </script>
+</body>
+</html>

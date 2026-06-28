@@ -1,0 +1,31 @@
+User_Type,Education,Years_Exp,Current_Industry,Coding_Score,Design_Score,Marketing_Score,Communication_Score,Leadership_Score,Problem_Solving_Score,Target_Career
+Student,Bachelors,0,None,9,3,2,6,4,8,Software Engineer
+Career Changer,Masters,8,Healthcare,2,3,4,9,9,7,Project Manager
+Job Seeker,Bachelors,3,Tech,8,4,3,5,5,9,Software Engineer
+Student,High School,0,None,4,9,6,7,3,5,UX Designer
+Career Changer,Bachelors,12,Retail,1,4,8,9,7,6,Digital Marketer
+Job Seeker,Masters,5,Finance,3,2,5,7,8,8,Project Manager
+Student,Bachelors,0,None,10,2,1,4,3,9,Software Engineer
+Career Changer,PhD,15,Education,2,3,2,10,10,9,Project Manager
+Job Seeker,Bachelors,2,Tech,7,8,4,6,4,7,UX Designer
+Student,Bachelors,1,None,6,3,9,8,5,6,Digital Marketer
+Career Changer,Bachelors,6,Healthcare,8,2,3,5,6,8,Software Engineer
+Job Seeker,Masters,4,Finance,9,3,2,6,7,9,Software Engineer
+Student,High School,0,None,2,10,7,8,4,5,UX Designer
+Career Changer,Masters,10,Retail,4,2,9,8,9,7,Project Manager
+Job Seeker,Bachelors,1,Tech,8,5,4,4,3,8,Software Engineer
+Student,Bachelors,0,None,3,9,5,7,2,6,UX Designer
+Career Changer,Bachelors,7,Finance,2,3,10,9,8,7,Digital Marketer
+Job Seeker,PhD,8,Tech,6,4,3,7,9,9,Software Engineer
+Student,Bachelors,0,None,9,4,2,5,4,9,Software Engineer
+Career Changer,Masters,9,Healthcare,3,8,6,9,8,7,Project Manager
+Job Seeker,Bachelors,3,Retail,2,4,10,8,6,6,Digital Marketer
+Student,High School,0,None,7,7,4,6,3,7,UX Designer
+Career Changer,Bachelors,14,Education,4,3,2,8,10,8,Project Manager
+Job Seeker,Masters,6,Tech,10,5,3,6,7,10,Software Engineer
+Student,Bachelors,0,None,5,3,4,7,5,8,Software Engineer
+Career Changer,Bachelors,5,Healthcare,2,9,5,8,6,6,UX Designer
+Job Seeker,Bachelors,4,Finance,4,2,9,9,8,7,Digital Marketer
+Student,Bachelors,0,None,8,4,3,6,4,8,Software Engineer
+Career Changer,PhD,11,Tech,9,5,4,7,9,10,Software Engineer
+Job Seeker,Bachelors,2,Retail,3,8,7,9,5,6,UX Designer
